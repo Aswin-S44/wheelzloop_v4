@@ -1,0 +1,111 @@
+.advertisement-hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Increased height for a more prominent hero section */
+    background-image: url('data:image/jpeg;base64,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'); /* Placeholder for a sleek car image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Using a modern font */
+    overflow: hidden; /* Ensures overlay doesn't spill */
+    margin-bottom: 40px; /* More space below the banner */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  }
+  
+  /* Optional: Import Poppins font for better typography if not already in your project */
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+  
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Gradient overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 800px; /* Limit content width for better readability */
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 4em; /* Larger, bolder title */
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* Slightly spaced letters for elegance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for pop */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5em; /* Clearer subtitle */
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-button {
+    background-color: #007bff; /* Primary action color */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Pill-shaped button */
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Button shadow */
+    text-transform: uppercase; /* Uppercase text for button */
+    letter-spacing: 1px;
+  }
+  
+  .hero-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); /* Enhanced shadow on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .advertisement-hero {
+      height: 300px;
+    }
+    .hero-title {
+      font-size: 2.5em;
+    }
+    .hero-subtitle {
+      font-size: 1.1em;
+    }
+    .hero-button {
+      padding: 12px 30px;
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .advertisement-hero {
+      height: 250px;
+    }
+    .hero-title {
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .hero-subtitle {
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+    .hero-button {
+      padding: 10px 25px;
+      font-size: 0.9em;
+    }
+  }

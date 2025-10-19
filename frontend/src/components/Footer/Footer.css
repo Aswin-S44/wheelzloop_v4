@@ -1,0 +1,248 @@
+.footer-container {
+    padding: 50px 20px; /* Added horizontal padding for smaller screens */
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke; /* Ensure background color is set */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px; /* Added gap for better spacing between sections */
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 0; /* Removed margin here, replaced by gap on parent */
+  }
+  
+  .footer-section.about {
+    min-width: 300px; /* Give about section a bit more room */
+  }
+  
+  .footer-section.about p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevent text from wrapping too early */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #b3257b;
+  }
+  
+  .payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* Added gap between payment icons */
+  }
+  
+  .payment-icons svg {
+    color: #555;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%; /* Make form take full width */
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 0.9em;
+    min-width: 0; /* Allow input to shrink */
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: #b3257b;
+  }
+  
+  .subscribe-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+  }
+  
+  .subscribe-button:hover {
+    background-color: #8c1e5c !important;
+  }
+  
+  .social-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start; /* Align social icons to the start by default */
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: #666;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #b3257b;
+    color: white;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom span {
+    vertical-align: middle;
+  }
+  
+  /* --- Media Queries for Responsiveness --- */
+  
+  /* For screens smaller than 992px (typical tablet landscape) */
+  @media (max-width: 992px) {
+    .footer-content {
+      justify-content: space-evenly; /* Evenly distribute sections */
+      gap: 20px;
+    }
+  
+    .footer-section {
+      flex: 0 0 45%; /* Two columns layout */
+      margin: 10px 0;
+    }
+  
+    .footer-section.about {
+      flex: 0 0 90%; /* About section takes full width */
+      text-align: center;
+    }
+  
+    .footer-section.about .payment-icons,
+    .footer-section.newsletter .social-links {
+      justify-content: center; /* Center icons in about and newsletter */
+    }
+  
+    .newsletter-form {
+      justify-content: center; /* Center form for better appearance */
+    }
+  }
+  
+  /* For screens smaller than 768px (typical tablet portrait and large phones) */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px; /* Increase gap when stacked */
+    }
+  
+    .footer-section {
+      min-width: unset;
+      width: 90%; /* Nearly full width */
+      text-align: center;
+      margin: 0;
+    }
+  
+    .footer-section.about {
+      width: 90%;
+    }
+  
+    .footer-section h3 {
+      text-align: center;
+    }
+  
+    .footer-section ul {
+      text-align: center;
+    }
+  
+    .footer-section.about .payment-icons {
+      justify-content: center;
+    }
+  
+    .newsletter-form {
+      flex-direction: column; /* Stack input and button */
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .email-input, .subscribe-button {
+      width: 80%; /* Adjust width for stacked elements */
+      max-width: 300px; /* Limit max width */
+      border-radius: 5px; /* Full border-radius when stacked */
+    }
+  
+    .email-input {
+      border-radius: 5px; /* Adjust radius */
+    }
+  
+    .subscribe-button {
+      margin-top: 0px; /* Add some space if needed */
+      border-radius: 5px; /* Adjust radius */
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  }
+  
+  /* For screens smaller than 480px (small phones) */
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 30px 15px;
+    }
+  
+    .logo-text {
+      font-size: 2em !important; /* Smaller logo */
+    }
+  
+    .footer-section h3 {
+      font-size: 1em;
+    }
+  
+    .email-input, .subscribe-button {
+      width: 95%; /* Wider input/button for very small screens */
+    }
+  }

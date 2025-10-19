@@ -1,0 +1,145 @@
+.popular-cars-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section-header {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .section-header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .section-header p {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .car-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .car-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .price-overlay {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .price-drop {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .car-info {
+    padding: 15px;
+  }
+  
+  .car-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .car-info p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .view-details-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .view-details-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .load-more-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .load-more-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .load-more-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Media Query for Mobile View */
+  @media (max-width: 768px) {
+    .car-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    }
+  
+    .section-header h1 {
+      font-size: 28px;
+    }
+  
+    .section-header p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Optional: For very small screens, you might want one card per row */
+  @media (max-width: 480px) {
+    .car-grid {
+      grid-template-columns: 1fr; /* One card per row */
+    }
+  }
